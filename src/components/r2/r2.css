@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Esta clase es la que se aplica para darle los estilos de fila color blanco */
+.white {
+  padding: 10px 30px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+}
+
+/*Esta clase es la que se aplica para darle los estilos de fila color gris */
+.grey {
+  padding: 10px 30px;
+  background-color: rgba(128, 128, 128, 0.194);
+  border: 1px solid black;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid black;
+  text-align: left;
+}
+
+/* Media Query para dispositivos moviles */
+@media screen and (min-width: 320px) {
+  table {
+    font-size: 10px;
+  }
+  .white,
+  .grey {
+    padding: 5px 15px;
+  }
+}
+
+/*Media Query para dispositivos tipo tableta*/
+@media screen and (min-width: 720px) {
+  table {
+    font-size: 13px;
+  }
+}
+
+/*Media Query para dispositivos tipo PC*/
+@media screen and (min-width: 1200px) {
+  table {
+    font-size: 17px;
+  }
+}
