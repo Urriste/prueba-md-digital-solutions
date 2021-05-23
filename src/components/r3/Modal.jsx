@@ -1,11 +1,15 @@
 import React from "react";
 import "./r3.css";
+
+//instanciamos React Dom para poder acceder al metodo createPortal, que es el
+// que nos permite crear los React Portals
 import ReactDom from "react-dom";
 
 const Modal = ({ children }) => {
   return ReactDom.createPortal(
     <div className="modal-container">
       {" "}
+      {/* Aca renderizamos los hijos del modal*/}
       <div className="modal">{children}</div>
     </div>,
 
