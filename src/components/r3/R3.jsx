@@ -1,8 +1,8 @@
 import { useState } from "react";
-import "./r3.css";
-import Video from "./video.mp4";
-import PlayImg from "./boton-de-play.png";
+import Video from "./img/video.mp4";
+import PlayImg from "./img/boton-de-play.png";
 import Modal from "./Modal";
+import "./style/inciso3.css";
 
 const R3 = () => {
   //con este estado controlamos la apertura o cierre del modal,

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, Fragment } from "react";
-import "./r4.css";
+import "./style/r4.css";
 
 const R4 = () => {
   //Creamos un estado donde guardaremos, y luego renderizaremos, los datos que provienen de la api
