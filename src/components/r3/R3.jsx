@@ -18,7 +18,7 @@ const R3 = () => {
       <div className="container">
         <div className="video-container">
           <video id="video" onClick={handleClick} src={Video}></video>{" "}
-          <button onClick={handleClick}>
+          <button className="btn-play" onClick={handleClick}>
             <img src={PlayImg} alt="" />
           </button>
         </div>
@@ -43,15 +43,16 @@ const R3 = () => {
           */}
           {open ? (
             <Modal>
-              <video className="video-modal" controls src={Video}></video>
+              {" "}
               <button
-                className="btn-modal"
+                className="btn-mod"
                 onClick={() => {
                   setOpen(false);
                 }}
               >
                 Close
               </button>
+              <video className="video-modal" controls src={Video}></video>
             </Modal>
           ) : null}
         </div>

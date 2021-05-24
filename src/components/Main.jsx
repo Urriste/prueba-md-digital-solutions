@@ -1,13 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./main.css";
 
 const Main = () => {
   return (
-    <div>
+    <div className="main-container">
       <h1>¿Qué inciso querés ver?</h1>
-      <Link to="/r2">Inciso R2</Link>
-      <Link to="/r3">Inciso R3</Link>
-      <Link to="/r4">Inciso R4</Link>
+      <Link className="link" to="/r2">
+        Inciso R2
+      </Link>
+      <Link className="link" to="/r3">
+        Inciso R3
+      </Link>
+      <Link className="link" to="/r4">
+        Inciso R4
+      </Link>
     </div>
   );
 };
