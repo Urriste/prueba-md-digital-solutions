@@ -1,5 +1,5 @@
 import React from "react";
-import "./r3.css";
+import "./style/inciso3.css";
 
 //instanciamos React Dom para poder acceder al metodo createPortal, que es el
 // que nos permite crear los React Portals

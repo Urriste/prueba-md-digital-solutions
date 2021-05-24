@@ -43,16 +43,10 @@ const R3 = () => {
           */}
           {open ? (
             <Modal>
-              {" "}
-              <button
-                className="btn-mod"
-                onClick={() => {
-                  setOpen(false);
-                }}
-              >
+              <video className="video-modal" controls src={Video}></video>
+              <button className="btn-mod" onClick={() => setOpen(false)}>
                 Close
               </button>
-              <video className="video-modal" controls src={Video}></video>
             </Modal>
           ) : null}
         </div>
